@@ -3,8 +3,8 @@
    left: var(--x-position);
    transform: rotate(var(--deg));
   position: relative;
-  height: 200px;
-  width: 200px;
+  width: 15%;
+  height: auto;
 }
 .container
 {
