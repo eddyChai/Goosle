@@ -1,21 +1,25 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import goose from '../images/goose.png';
-import './Image.css';
+import gooseStyle from './gooseStyle.css';
 
 const Image = () => {
-   const imageRef = useRef();
-   const imgStyle = {
-      height: '200px',
-      width: '200px',
-      position: 'absolute',
-      top: `${Math.floor((Math.random())* (window.innerHeight ))}px`,
-      left: `${Math.floor((Math.random())* (window.innerWidth ))}px`,
-      transform: `rotate(${Math.floor(Math.random() * 360)}deg)`,
-      objectFit: 'contain'
-   }
+   function onloadFunction() {
 
+      //Then get the width and height of the screen. if the container is not the screen
+      //The the Id of the container element.
+      var screenWidth = window.innerWidth;
+      var screenHeight = window.innerHeight;
+
+      //Now generate a random top and left position for the image on page load
+      var imgLeft = Math.floor(Math.random() * (screenWidth - 50));
+      var imgTop= Math.floor(Math.random() * (screenHeight - 50));
+      document.getElementById("goop").style.cssText += '--x-position:' + imgLeft + 'px; --y-position:' + imgTop + 'px;';
+      document.getElementById("goop").style.cssText += '--deg:' + Math.floor(Math.random() * 360)+'deg';
+   }
    return (
-     <img src={goose} ref={imageRef} style={imgStyle} alt="" />
+      <div className = "container">
+         <img className="images"  onLoad={onloadFunction} src={goose} id="goop" alt="goosey"></img>
+      </div>
    )
 }
 

@@ -1,0 +1,44 @@
+function onloadFunction() {
+   var arrayIDs = ["imgID1"];    //all the IDs of the images
+
+   //First get the image height and width in a var
+   var element = document.getElementById(arrayIDs[0]);
+   var positionInfo = element.getBoundingClientRect();
+   var imgHeight = positionInfo.height;
+   var imgWidth = positionInfo.width;
+
+   //Then get the width and height of the screen. if the container is not the screen
+   //use the same code as above for the image width/height and change the imgID
+   //The the Id of the container element.
+   var screenWidth = window.innerWidth;
+   var screenHeight = window.innerHeight;
+
+   //Now generate a random top and left position for the image on page load
+   var imgLeft = Math.floor(Math.random() * (screenWidth));
+   var imgTop= Math.floor(Math.random() * (screenHeight));
+
+   //The reason to get the img and screen height and width is to not let the
+   //image
+   //overlap out of the screen
+
+
+   //Now set the image to correct position
+   document.getElementById(arrayIDs[0]).style.top = imgTop+"px";
+   document.getElementById(arrayIDs[0]).style.left = imgLeft+"px";
+   document.getElementById(arrayIDs[0]).style.left = imgLeft+"px";
+
+}
+// const imgStyle = {
+//    height: '200px',
+//    width: '200px',
+//    position: 'absolute',
+//    top: `${Math.floor((Math.random())* (window.innerHeight ))}px`,
+//    left: `${Math.floor((Math.random())* (window.innerWidth ))}px`,
+//    transform: `rotate(${Math.floor(Math.random() * 360)}deg)`
+// }
+
+// return (
+//    <div className={styles.bigblue}>
+//       <img src={goose} ref={imageRef} style={imgStyle} alt="" />
+//    </div>
+// )onLoad={onloadFunction} id="imgID1"

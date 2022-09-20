@@ -1,0 +1,14 @@
+.images {
+   top:  var(--y-position);
+   left: var(--x-position);
+   transform: rotate(var(--deg));
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+.container
+{
+   height: 100vh;
+   width: 100vw;
+    overflow: hidden;
+}
