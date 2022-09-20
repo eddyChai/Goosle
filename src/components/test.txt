@@ -42,3 +42,7 @@ function onloadFunction() {
 //       <img src={goose} ref={imageRef} style={imgStyle} alt="" />
 //    </div>
 // )onLoad={onloadFunction} id="imgID1"
+
+
+Deploy on pages
+npm run deploy -- -m "COMMIT MESSAGE"

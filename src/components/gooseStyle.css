@@ -3,8 +3,19 @@
    left: var(--x-position);
    transform: rotate(var(--deg));
   position: relative;
-  width: 15%;
+  width: 30%;
   height: auto;
+}
+@media only screen and (min-width: 768px) {
+  /* For mobile phones: */
+  .images {
+     top:  var(--y-position);
+     left: var(--x-position);
+     transform: rotate(var(--deg));
+    position: relative;
+    width: 15%;
+    height: auto;
+  }
 }
 .container
 {
