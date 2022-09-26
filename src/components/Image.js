@@ -1,6 +1,6 @@
 import React from 'react';
 import goose from '../images/goose.png';
-import gooseStyle from './gooseStyle.css';
+import './gooseStyle.css';
 
 const Image = () => {
    function onloadFunction() {
