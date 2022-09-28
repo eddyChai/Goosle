@@ -2,7 +2,7 @@
    top:  var(--y-position);
    left: var(--x-position);
    transform: rotate(var(--deg));
-  position: relative;
+  position: absolute;
   width: 30%;
   height: auto;
 }
@@ -12,13 +12,14 @@
      top:  var(--y-position);
      left: var(--x-position);
      transform: rotate(var(--deg));
-    position: relative;
+    position: absolute;
     width: 15%;
     height: auto;
   }
 }
 .container
 {
+  position: absolute;
    height: 100vh;
    width: 100vw;
     overflow: hidden;

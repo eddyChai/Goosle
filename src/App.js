@@ -1,19 +1,16 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './pages/Home.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-         <nav>
-            <li>
-
-            </li>
-         </nav>
-      </header>
-      <body>
-
-      </body>
+      <Router>
+        <Routes>
+          {/* <Route exact path="/search" element={<Home/>}/> */}
+          <Route path="/Goosle/" element={<Home />}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
