@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Goosle/static/css/main.a741dea9.css",
-    "main.js": "/Goosle/static/js/main.1b8f6cb5.js",
+    "main.css": "/Goosle/static/css/main.288b069d.css",
+    "main.js": "/Goosle/static/js/main.4b3fdc81.js",
     "static/js/787.a4275d94.chunk.js": "/Goosle/static/js/787.a4275d94.chunk.js",
     "static/media/goose.png": "/Goosle/static/media/goose.ec6d1af1241c893c950c.png",
     "index.html": "/Goosle/index.html",
-    "main.a741dea9.css.map": "/Goosle/static/css/main.a741dea9.css.map",
-    "main.1b8f6cb5.js.map": "/Goosle/static/js/main.1b8f6cb5.js.map",
+    "main.288b069d.css.map": "/Goosle/static/css/main.288b069d.css.map",
+    "main.4b3fdc81.js.map": "/Goosle/static/js/main.4b3fdc81.js.map",
     "787.a4275d94.chunk.js.map": "/Goosle/static/js/787.a4275d94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a741dea9.css",
-    "static/js/main.1b8f6cb5.js"
+    "static/css/main.288b069d.css",
+    "static/js/main.4b3fdc81.js"
   ]
 }
