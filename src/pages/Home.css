@@ -10,7 +10,7 @@
 }
 
 .goosle {
-  z-index:1;
+  z-index:2;
   top: 15%;
   position: relative;
   object-fit: contain;
@@ -24,22 +24,23 @@
 
 @media screen and (max-width: 750px) {
 
-.search {
-    max-width: 560px;
-}
-.goosle {
-  z-index:1;
-  position: relative;
-  object-fit: contain;
-  height: 70px;
-}
+  .search {
+      max-width: 560px;
+  }
+  .goosle {
+    z-index:2;
+    position: relative;
+    object-fit: contain;
+    height: 70px;
+  }
 
 }
 .images {
+  z-index:1;
   top:  var(--y-position);
   left: var(--x-position);
   transform: rotate(var(--deg));
  position: absolute;
- width: 30%;
+ width: 15%;
  height: auto;
 }

@@ -1,9 +1,7 @@
 import React from 'react'
 import './Home.css';
 import gooseLogo from '../images/goosleLogo.png';
-// import {Avatar} from "@material-ui/core";
-// import AppsIcon from "@material-ui/icons/Apps";
-import {Link} from "react-router-dom";
+import Search from '../components/Search';
 import goose from '../images/goose.png';
 function Home() {
   function onloadFunction() {
@@ -24,9 +22,9 @@ function Home() {
         <div className='home__body'>
           
           <img className="goosle" src={gooseLogo} alt="logo"/>
-         <img className="images"  onLoad={onloadFunction} src={goose} id="goop" alt="goosey"></img>
+          <img className="images"  onLoad={onloadFunction} src={goose} id="goop" alt="goosey"></img>
           <div className="home__inputContainer">
-            {/* <Search /> */}
+            <Search />
           </div>
         </div>
   )
